@@ -1,290 +1,938 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+<html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description"
+          content="IIT Madras is one of the foremost institutes of national importance for higher technical education and research. Learn more about our experience with online education and why we care about the online degree program." />
+      <meta property="og:image" content="https://study.iitm.ac.in/https://study.iitm.ac.in/ds/assets/img/socialmedia_card.jpg">
+      <link rel="apple-touch-icon" sizes="76x76" href="https://study.iitm.ac.in/ds/assets/img/logo.ico">
+      <link rel="icon" href="https://study.iitm.ac.in/ds/assets/img/logo.ico">
+      <title>Exam</title>
+     <!-- Google Tag Manager -->
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-WDTR4NZ6");
+</script>
+<!-- End Google Tag Manager -->
+      <!--     Fonts and icons     -->
+      <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <!-- Nucleo Icons -->
+      <link rel="stylesheet" href="https://study.iitm.ac.in/ds/assets/css/nucleo-icons.css">
+      <link rel="stylesheet" href="https://study.iitm.ac.in/ds/assets/css/nucleo-svg.css">
+      <!-- Font Awesome Icons -->
+      <link rel="stylesheet" href="https://study.iitm.ac.in/ds/assets/css/font-awesome.css">
+      <link rel="stylesheet" href="https://study.iitm.ac.in/ds/assets/css/nucleo-svg.css">
+      <!-- CSS Files -->
+      <link rel="stylesheet" href="https://study.iitm.ac.in/ds/assets/css/argon-design-system.css?v=1.2.0">
+      <link rel="stylesheet" href="https://study.iitm.ac.in/ds/assets/css/index.css">
+      <link rel="stylesheet" href="https://study.iitm.ac.in/ds/assets/css/aboutIITM.css">
+      <style>
+          .jumbotron {
+              background-image: url('https://study.iitm.ac.in/ds/assets/img/aboutIITM/36428026_1996256613729115_5858753103083339776_o@2x.png');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              height: 50vh;
+          }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+          @media screen and (max-width: 573px) {
+              .jumbotron {
+                  background-image: url("https://study.iitm.ac.in/ds/assets/img/aboutIITM/About IITM-mobile.jpg");
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  height: 35vh;
+              }
+          }
+      </style>
+  </head>
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
-  min-height: 100%;
-}
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
+  <body style="position: relative; min-height: 100%; top: 0px">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDTR4NZ6" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div id="fixedTop" class="fixed-top">
+      <section class="google-translator bg-light">
+        <div id="google_translate_element" class="d-none"></div>
+        <div class="mr-4">
+          <ul
+            class="translation-links d-flex justify-content-end m-0 p-0"
+            style="list-style-type: none"
+          >
+            <li class="mr-1">
+              <a
+                id="english"
+                data-lang="English"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+                >English</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="hindi"
+                data-lang="Hindi"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | हिंदी
+              </a>
+            </li>
+            <li class="mr-1">
+              <a
+                id="tamil"
+                data-lang="Tamil"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | தமிழ்
+              </a>
+            </li>
+            <li class="mr-1">
+              <a
+                id="telugu"
+                data-lang="Telugu"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | తెలుగు</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="malyalam"
+                data-lang="Malayalam"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | മലയാളം</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="kannada"
+                data-lang="Kannada"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | ಕನ್ನಡ</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="marathi"
+                data-lang="Marathi"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | मराठी</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="gujrati"
+                data-lang="Gujarati"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | ગુજરાતી
+              </a>
+            </li>
+            <li>
+              <a
+                id="Banga"
+                data-lang="Bengali"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | বাংলা</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
-</head>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-</div>
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-navbar">
+        <a class="navbar-brand mr-lg-5 pl-3" href="index.html">
+          <img
+            style="height: 58px"
+            src="https://study.iitm.ac.in/ds/assets/img/IITMOD-Logo.svg"
+            alt="IIT Madras Online Degree Program"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-default"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-default">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="index.html">
+                  <img src="https://study.iitm.ac.in/ds/assets/img/logo.png" />
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button
+                  type="button"
+                  class="navbar-toggler"
+                  data-toggle="collapse"
+                  data-target="#navbar-default"
+                  aria-controls="navbar-default"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item mr-0 dropdown">
+              <a
+                class="nav-link"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-weight: 600"
+              >
+                
+                  Academics
+                
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbar-default_dropdown_1"
+              >
+                <a class="dropdown-item" href="academics.html#AC1"
+                  >Overall Structure</a
+                >
+                <a class="dropdown-item" href="academics.html#AC2"
+                  >Term Structure</a
+                >
+                <a class="dropdown-item" href="academics.html#AC3"
+                  >Course Registrations
+                </a>
+                <a class="dropdown-item" href="academics.html#AC4"
+                  >Assessments</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="academics.html#AC9"
+                  >Exam Cities</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="academics.html#AC10"
+                  >Fee Structure</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="academics.html#AC11"
+                  >Foundation Level</a
+                >
+                <a class="dropdown-item" href="academics.html#AC12"
+                  >Diploma Level</a
+                >
+                <a class="dropdown-item" href="academics.html#AC15"
+                  >BSc Degree Level</a
+                >
+                <a class="dropdown-item" href="academics.html#AC16"
+                  >BS Degree Level</a
+                >                
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="academics.html#AC17"
+                  >Sample Certificates</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="academic_calendar.html"
+                  >Academic Calendar</a
+                >
+              </div>
+            </li>
+            <li class="nav-item mr-0 dropdown">
+              <a
+                class="nav-link"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-weight: 600"
+                > 
+                
+                  Admissions 
+                
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbar-default_dropdown_1"
+              >
+                <a class="dropdown-item" href="admissions.html#AD0"
+                  >Important Dates</a
+                >
+                <a class="dropdown-item" href="admissions.html#AD1"
+                  >Mandatory Requirements</a
+                >
+                <div class="dropdown-divider"></div>
+                <!-- <a class="dropdown-item text-primary" href="admissions.html#AD2"> Two Admission Paths:</a>
+                            <a class="dropdown-item" href="admissions.html#AD2">Regular Entry</a>
+                            <a class="dropdown-item" href="admissions.html#AD3">Diploma Only Entry</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-primary" href="admissions.html#AD4"> Regular Entry:</a> -->
+                <a class="dropdown-item" href="admissions.html#AD4">Eligibility to Apply</a>
+                <a class="dropdown-item" href="admissions.html#AD5">Application Process</a>
+                <a class="dropdown-item" href="admissions.html#AD6">Admission to the Foundation Level</a>
+                <i><a class="dropdown-item" href="admissions.html#AD7">1. Regular Entry
+                  </a></i>
+                <i><a class="dropdown-item" href="admissions.html#AD8">2. JEE-based Entry
+                  </a></i>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="admissions.html#AD9">International Students</a>
+              </div>
+            </li>
+            <li class="dropdown nav-item mr-0">
+              <a
+                class="nav-link"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-weight: 600"
+              >
+                
+                  Resources 
+                
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbar-default_dropdown_1"
+              >
+                <a class="dropdown-item" href="helpvideos.html">Help Videos</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="inthemedia.html">In the Media</a>
+                <a class="dropdown-item" href="archive.html">Archive</a>
+              </div>
+            </li>
+            <li class="dropdown nav-item mr-0">
+              <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" style="font-weight: 600;">
+              
+                Student Life
+              
+              <i class="fas fa-angle-down"></i>
+              </a>
+                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbar-default_dropdown_1">
+                    <a class="dropdown-item" href="student_life.html">Student Houses & Societies</a>
+                    <a class="dropdown-item" href="https://sites.google.com/ds.study.iitm.ac.in/paradox-23/home" target="_blank">PARADOX / Student Festivals</a>
+                    
+                </div>
+            </li>
+            <li class="nav-item mr-0">
+              <a
+                class="nav-link"
+                style="font-weight: 600"
+                href="https://school-connect.study.iitm.ac.in/"
+                target="_blank"
+              >
+              School Connect
+              </a>
+            </li>
+            <li class="dropdown nav-item mr-0">
+              <a
+                class="nav-link"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-weight: 600"
+              >
+                
+                Achievements 
+                
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbar-default_dropdown_1"
+              >
+                <div class="dropdown-item">Recognition</div>
+                <a class="dropdown-item" style="padding-left: 30px;" href="https://toppers-page-6lphel25kq-el.a.run.app/" target="_blank">1. Toppers Page</a>
+                <a class="dropdown-item" style="padding-left: 30px;" href="https://sites.google.com/ds.study.iitm.ac.in/best-project/home" target="_blank">2. Student's Best Projects</a>
+                    <a class="dropdown-item" style="padding-left: 30px;" href="https://sites.google.com/ds.study.iitm.ac.in/internshipsite/home" target="_blank">3. Teaching Assistance</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://sites.google.com/ds.study.iitm.ac.in/booksandpublications/home" target="_blank">Research and Publication</a>
+              </div>
+            </li>
+            <li class="nav-item mr-0">
+              <a
+                class="nav-link"
+                style="font-weight: 600"
+                href="events.html"
+              >
+                
+                Events
+                
+              </a>
+            </li>
+
+            <li class="nav-item mr-0">
+              <a class="nav-link" style="font-weight: 600" href="faq.html">
+                
+                
+                FAQ
+                
+              </a>
+            </li>
+            <li class="dropdown nav-item mr-0">
+              <a
+                class="nav-link"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-weight: 600"
+              >
+                
+                About IITM
+                
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbar-default_dropdown_1"
+              >
+                <a class="dropdown-item" href="aboutIITM.html">About IIT Madras</a>
+                <a class="dropdown-item" href="aboutIITM.html#FC">Faculty Co-ordinators</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="aboutIITM.html#footer">Contact Us</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" target="_blank" href="https://podgoodies.iitmadrasonline.in/">Merchandise</a>
+                
+              </div>
+            </li>
+            
+            
+            <li class="nav-item mr-0">
+              <a
+                class="nav-link"
+                style="font-weight: 600"
+                href="partnerships.html"
+              >
+                
+                  Partnerships
+                
+              </a>
+            </li>
+
+            <li class="nav-item mr-0">
+              <a
+                class="nav-link"
+                style="font-weight: 600"
+                href="https://placements.study.iitm.ac.in"
+                target="_blank"
+              >
+                Placements
+              </a>
+            </li>
+            <li class="nav-item mr-0">
+              <a
+                class="nav-link text-decoration-none"
+                href="https://ds.study.iitm.ac.in/auth/login"
+                ><button class="btn btn-sm btn-outline-default">
+                  SIGN IN
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      
+
+      <!-- notifications -->
+      <div id="notification" class="xl+notification">
+        <div class="d-md-flex justify-content-center text-highlights">
+          
+                <div class="text-lighter notificationText mr-2">
+                Applications Open now for September 2024 Batch | Applications Close: Sep 15, 2024 | Exam: Oct 27, 2024
+                </div>
+                <a class="text-decoration-none notification_apply_now" target="_blank"
+                     href="https://ds.study.iitm.ac.in/auth/login?apply_qualifier=true">
+                     <button class="btn btn-sm btn-light">APPLY NOW</button>
+                </a>
+
+        </div>
+      </div>
+      <!-- end-notifications -->
+    </div>
+    <!-- scrollToTop -->
+    <button
+      id="scrollToTop"
+      onclick="scrollToTop();"
+      class="scrollToTop bg-primary shadow-lg--hover"
+    >
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    
+    <div id="mainContent">
+        <!-- Mob -->
+        <div id="mobNotification" class="container-fluid xl-notification">
+            <div class="row justify-content-center align-items-center pt-2 pr-2 pl-2 pb-4">
+                <div class="remindText col-12 col-sm-12 col-md-12 col-lg-12 justify-content-center pb-4">
+                    
+                    <p style="line-height: 150%;" class="text-lighter notificationText pb-0 mb-2 text-highlights">
+                        Applications Open now for September 2024 Batch | Applications Close: Sep 15, 2024 | Exam: Oct 27, 2024
+                        <br />
+                        <a class="text-decoration-none" target="_blank"
+                            href="https://ds.study.iitm.ac.in/auth/login?apply_qualifier=true"><button
+                                class="btn btn-sm btn-light">APPLY NOW</button>
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- defining video modals -->
+
+    <div id="videoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"
+                            aria-hidden="true"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modalVideoContainer">
+                        <iframe frameborder="0" allowfullscreen="" class="modalVideo"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about IITM -->
+    <div class="container-md container-fluid">
+        <div class="row mb-4">
+
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQt2SSdw_4Cu6cO5muj-O0Q1bvAr8QdS4nUP51B0laujxJN5HkxnIwrU3hQpG-nK5kd-Lezr6Uev5PY/pub?embedded=true" width="900px" height="900px"></iframe>
+
+        </div>
+    </div>
+    <!-- EndContent -->
+
+
+    
+    <footer id="footer" class="bg-primary py-3">
+      <div class="container-fluid">
+        <div class="h5 text-lighter">Contact Us</div>
+       <!-- <div class="row pt-2 pb-2">
+          <div class="col-sm-12 col-md-5 text-lighter">
+            <div class="d-flex footer-text">
+              <div style="flex-basis: 8%">
+                <img
+                  style="width: 1rem"
+                  src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-location.svg"
+                />
+              </div>
+              <div style="flex-basis: 90%">
+                IITM BS Degree Office, 3rd Floor, ICSR Building,<br />
+                IIT Madras, Chennai - 600036
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <!-- <div class="row pt-2 pb-2">
+          --><!--col-sm-12 col-md-5 -->
+          <!--<div class="col-sm-12 text-lighter">
+            <div class="d-flex footer-text">
+              <!-- style="flex-basis: 8%" -->
+             <!-- <div style="margin-right: 12px;">
+                <img
+                  style="width: 1rem"
+                  src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-phone.svg"
+                />
+              </div>
+              <!-- style="flex-basis: 90%" -->
+             <!-- <div >
+                 <!-- 7850999966 (Mon-Fri 9am-6pm)
+                support@study.iitm.ac.in  -->
+              <!--  For any queries, please reach out to us through one of the following modes:
+
+                Please email support@study.iitm.ac.in - Our normal response time is 3 working days. It might take a little longer during busy periods. We will share Google Meet links during such periods.
+
+                You might also reach us over phone at 7850999966. Due to the high volume of calls we receive every day, there might be long wait times. In some cases, you might have to call multiple times to successfully connect to us. Please use ONLY the above methods for any queries regarding the program.
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <div class="row pt-2 pb-2">
+          <div class="col-sm-12 col-md-3 text-lighter">
+            <div class="d-flex footer-text">
+              <div style="flex-basis: 8%">
+                <img
+                  style="width: 1rem"
+                  src="https://study.iitm.ac.in/ds/assets/img/homepage/email.png"
+                />
+              </div>
+              <div style="flex-basis: 90%">
+                support@study.iitm.ac.in
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-3 text-lighter">
+            <div class="d-flex footer-text">
+              <div style="flex-basis: 8%">
+                <img
+                  style="width: 1rem"
+                  src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-phone.svg"
+                />
+              </div>
+              <div style="flex-basis: 90%">
+                7850999966
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 text-lighter">
+          <div class="d-flex footer-text">
+            <div style="flex-basis: 8%">
+              <img
+                style="width: 1rem"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/location.png"
+              />
+            </div>
+            <div style="flex-basis: 90%">
+              IITM BS Degree Office, 3rd Floor, ICSR Building,<br />
+              IIT Madras, Chennai - 600036
+            </div>
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
+      </div>
+        <div class="row pt-2 pb-4 border-bottom justify-content-between">
+          <div class="col-sm-12 col-md-10 text-lighter">
+            <div class="d-flex footer-text">
+              <div style="flex-basis: 2%">
+                <img
+                  style="width: 1rem"
+                  src="https://study.iitm.ac.in/ds/assets/img/homepage/info.png"
+                />
+              </div>       
+              <div style="flex-basis: 98%">
+                <span style="font-size: 0.7rem;line-height: 0.54rem;">Please use ONLY the above methods for any queries regarding the program.
+                  Our normal response time is 3 working days. It might take a little longer during busy periods.
+                  We will share Google Meet links during such periods.
+                  Due to the high volume of calls we receive every day, there might be long wait times.
+                  In some cases, you might have to call multiple times to successfully connect to us. 
+                 </span>
+              </div>
+            </div>
+          </div>
+          <!--<div class="col-sm-12 col-md-5 text-lighter">
+             <div class="d-flex footer-text mt-3">
+                        <div class="qr-image mr-3" style="height: 100px;width:100px;">
+                            <img src="https://study.iitm.ac.in/ds/assets/img/homepage/whatsappQR.jpeg" style="height: auto;width:100%;" alt="">
+                        </div>
+                        <div class="qr-text" style="flex-basis: 40%;margin-right: auto;align-self: center;">
+                            Scan QR code to chat
+                            with our WhatsApp bot
+                            +91 9840776800
+                        </div>
+                    </div>
+          </div>-->
+          <div class="d-none d-md-block col-md-2 text-lighter align-self-end">
+            <div class="d-flex justify-content-end footer-text">
+              View Site Map
+            </div>
+            <div class="d-flex justify-content-end">
+              <small>© IIT Madras. All rights reserved.</small>
+            </div>
+          </div>
+          <div class="d-md-none footer-hidden col-md-12 pt-4">
+            <a
+              class="text-decoration-none"
+              href="https://www.facebook.com/iitmadrasbsdegree"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-facebook.svg"
+                alt="fb"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.instagram.com/iitmadras_bs/"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-instagram.svg"
+                alt="ig"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href=" https://twitter.com/iitm_bs"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-twitter.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.linkedin.com/company/iit-madras-bs-datascience-programme/"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-linkedin.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://wa.me/message/IVROM2UN7XIJL1"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer icon-whatsapp.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="py-1 py-md-3 row justify-content-between">
+          <div class="d-none d-md-block col-md-6 pt-2">
+            <a
+              class="text-decoration-none"
+              href="https://www.facebook.com/iitmadrasbsdegree"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-facebook.svg"
+                alt="fb"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.instagram.com/iitmadras_bs/"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-instagram.svg"
+                alt="ig"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href=" https://twitter.com/iitm_bs"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-twitter.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.linkedin.com/company/iit-madras-bs-datascience-programme/"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer%20icon-linkedin.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://wa.me/message/IVROM2UN7XIJL1"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="https://study.iitm.ac.in/ds/assets/img/homepage/Footer icon-whatsapp.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 d-md-none footer-hidden footer-text-small text-lighter"
+          >
+            <div class="d-flex justify-content-md-end footer-text">
+              View Site Map
+            </div>
+            <div class="d-flex justify-content-md-end">
+              <small>© IIT Madras. All rights reserved.</small>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-flex justify-content-md-end">
+            <div class="text-lighter">
+              <span
+                class="footerLinks footer-text"
+                url="privacy_policy.html"
+                style="cursor: pointer"
+                >Privacy Policy</span
+              >
+              |
+              <span
+                class="footerLinks footer-text"
+                url="tos.html"
+                style="cursor: pointer"
+                >Terms of Service</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+    
+    <!-- custom-styling-js -->
+    <script type="text/javascript">
+        let scrollButton = document.getElementById('scrollToTop');
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+        // Add Custom Margin for the main content
+        window.onload = function () {
+            let fixed = document.getElementById("fixedTop");
+            const marginTop = window.getComputedStyle(fixed).getPropertyValue("height");
+            let styles = `
+                p:target::before {
+                    content: "";
+                      display: block;
+                      height: ${marginTop}; /* fixed header height*/
+                      margin: -${marginTop} 0 0; /* negative fixed header height */
+                }`
+            document.getElementById("mainContent").style.marginTop = marginTop;
+            let styleSheet = document.createElement("style")
+            styleSheet.type = "text/css"
+            styleSheet.innerText = styles
+            document.head.appendChild(styleSheet)
+            weekShow();
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+        window.onresize = function () {
+            let fixed = document.getElementById("fixedTop");
+            const marginTop = window.getComputedStyle(fixed).getPropertyValue("height");
+            let styles = `
+                p:target::before {
+                    content: "";
+                      display: block;
+                      height: ${marginTop}; /* fixed header height*/
+                      margin: -${marginTop} 0 0; /* negative fixed header height */
+                }`
+            document.getElementById("mainContent").style.marginTop = marginTop;
+            let styleSheet = document.createElement("style")
+            styleSheet.type = "text/css"
+            styleSheet.innerText = styles
+            document.head.appendChild(styleSheet)
+        }
 
-</body>
+        // Checking if to show scroll to top button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // footer links navigation
+        let footerLinks = document.getElementsByClassName('footerLinks');
+        for (let i = 0; i < footerLinks.length; i++) {
+            footerLinks[i].addEventListener('click', function () {
+                window.location = this.getAttribute('url');
+            })
+        }
+    </script>
+
+    <!--   Core JS Files   -->
+    <script src="https://study.iitm.ac.in/ds/assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="https://study.iitm.ac.in/ds/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="https://study.iitm.ac.in/ds/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://study.iitm.ac.in/ds/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="https://study.iitm.ac.in/ds/assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="https://study.iitm.ac.in/ds/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="https://study.iitm.ac.in/ds/assets/js/plugins/moment.min.js"></script>
+    <script src="https://study.iitm.ac.in/ds/assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+    <script src="https://study.iitm.ac.in/ds/assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+    <script src="https://study.iitm.ac.in/ds/assets/js/argon-design-system.min.js?v=1.2.0" type="text/javascript"></script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://study.iitm.ac.in/ds/assets/js/custom/google-language-translator.js"></script>
+
+    <!-- Custom -->
+    <script src="https://study.iitm.ac.in/ds/assets/js/custom/video-modal.js"></script>
+
+  </body>
 </html>
